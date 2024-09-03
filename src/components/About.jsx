@@ -1,15 +1,30 @@
 import landingImage from "../assets/images/landing.jpeg";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const About = () => {
+  const [text] = useTypewriter({
+    words: ['RoxyApps'],
+    loop: true,
+    typeSpeed: 50,
+    deleteSpeed: 80,
+    delaySpeed: 2000,
+    cursorBlinking: false,  
+  });
+
   return (
     <div
-      className="relative h-screen bg-cover bg-center mt-10"
+      className="relative h-screen bg-cover bg-center mt-12"
       style={{ backgroundImage: `url(${landingImage})` }}
     >
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
         <div className="text-center text-white p-6 max-w-lg sm:p-8 md:max-w-xl lg:max-w-2xl">
           <h2 className="text-4xl font-bold mb-4 text-[#FF9800] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-            RoxyApps
+            <span>{text}</span>
+            <Cursor
+              cursorBlinking={false} 
+              cursorStyle=""
+              cursorColor="#FF9800"
+            />
           </h2>
           <p className="mb-6 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             Software company that provides digital solutions for existing business processes.

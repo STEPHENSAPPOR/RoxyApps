@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Team from "./components/Team";
 import Goal from "./components/Goal";
+import Blog from "./components/Blog";
+
 
 const App = () => {
   return (
@@ -23,6 +25,9 @@ const App = () => {
       </div>
       <div id="projects">
         <Projects />
+      </div>
+      <div id="blog">
+        <Blog />
       </div>
       <div id="team">
         <Team />

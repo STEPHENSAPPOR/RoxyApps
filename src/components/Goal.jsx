@@ -1,12 +1,12 @@
 const Goal = () => {
   return (
     <div className="py-12">
-      <div className="text-center mb-8">
+      <div className="text-center mb-5">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4">
           About Us
         </h2>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* First Grid Item */}
           <div className="p-4 sm:p-6 bg-white rounded-lg shadow-lg text-center bg-gradient-to-r from-purple-500 to-orange-400">

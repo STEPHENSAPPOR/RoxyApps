@@ -37,7 +37,7 @@ const Product = () => {
   };
 
   return (
-    <div className="relative mt-9">
+    <div className="relative mt-5">
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4">
           PRODUCTS

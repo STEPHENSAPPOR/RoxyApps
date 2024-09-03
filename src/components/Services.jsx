@@ -2,7 +2,7 @@ import { ShieldCheckIcon, ComputerDesktopIcon } from '@heroicons/react/24/outlin
 
 const Services = () => {
   return (
-    <div className="relative mt-10 px-4 sm:px-6 lg:px-8">
+    <div className="relative mt-5 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4">
@@ -32,7 +32,7 @@ const Services = () => {
               </div>
               <div>
                 <h4 className="text-base sm:text-lg md:text-xl font-semibold">Cyber Security</h4>
-                <p className="text-xs sm:text-sm md:text-base">Lorem ipsum dolor sit amet consectetur.</p>
+                
               </div>
             </div>
 
@@ -42,8 +42,8 @@ const Services = () => {
                 <ComputerDesktopIcon className="w-8 h-8 text-black" />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">IT Consultant</h4>
-                <p className="text-xs sm:text-sm md:text-base">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 className="text-base sm:text-lg md:text-xl font-semibold">IT Consultancy</h4>
+                
               </div>
             </div>
 
@@ -53,8 +53,8 @@ const Services = () => {
                 <ShieldCheckIcon className="w-8 h-8 text-black" />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Cyber Security</h4>
-                <p className="text-xs sm:text-sm md:text-base">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Software Development</h4>
+                
               </div>
             </div>
 
@@ -64,8 +64,8 @@ const Services = () => {
                 <ComputerDesktopIcon className="w-8 h-8 text-black" />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">IT Consultant</h4>
-                <p className="text-xs sm:text-sm md:text-base">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Data Visualization</h4>
+                
               </div>
             </div>
           </div>
