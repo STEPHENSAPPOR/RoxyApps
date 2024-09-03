@@ -39,7 +39,7 @@ const Projects = () => {
         PROJECTS
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        <div className="relative group transition-transform duration-300 transform hover:scale-105 row-span-2 col-span-2">
+        <div className="relative group transition-transform duration-300 transform hover:scale-105 row-span-2 col-span-2 animate-ping">
           <img src={cards[0].image} alt={cards[0].title} className="object-cover w-full h-full rounded-lg" />
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col justify-center items-center p-4 rounded-lg">
             <h3 className="text-[#FF9800] text-xl font-bold text-center">{cards[0].title}</h3>
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
         </div>
         {cards.slice(1).map((card, index) => (
-          <div key={index} className="relative group transition-transform duration-300 transform hover:scale-105">
+          <div key={index} className="relative group transition-transform duration-300 transform hover:scale-105 animate-ping">
             <img src={card.image} alt={card.title} className="object-cover w-full h-full rounded-lg" />
             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col justify-center items-center p-4 rounded-lg">
               <h3 className="text-[#FF9800] text-lg font-bold text-center">{card.title}</h3>

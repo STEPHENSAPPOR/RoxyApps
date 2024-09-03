@@ -25,7 +25,7 @@ const NavBar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Home
           </Link>
@@ -33,7 +33,7 @@ const NavBar = () => {
             to="product"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Products
           </Link>
@@ -41,7 +41,7 @@ const NavBar = () => {
             to="services"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Services
           </Link>
@@ -49,7 +49,7 @@ const NavBar = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Projects
           </Link>
@@ -57,7 +57,7 @@ const NavBar = () => {
             to="blog"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Blog
           </Link>
@@ -65,7 +65,7 @@ const NavBar = () => {
             to="team"
             smooth={true}
             duration={500}
-            className="text-[#FF9800] font-bold text-xl hover:text-gray-600 cursor-pointer"
+            className="text-[#FF9800] font-bold text-xl hover:text-[#166664] cursor-pointer"
           >
             Team
           </Link>
@@ -73,7 +73,7 @@ const NavBar = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <button className="text-gray-800 hover:text-gray-600" onClick={toggleMobileMenu}>
+          <button className="text-gray-800 hover:text-[#166664]" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? (
               <FaTimes className="h-6 w-6" />
             ) : (
