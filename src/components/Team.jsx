@@ -47,7 +47,7 @@ const Team = () => {
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
             <h3 className="text-xl font-medium text-gray-900">{member.name}</h3>
-            <p className="text-red-500">{member.role}</p>
+            <p className="text-[#FF9800]">{member.role}</p>
             <div className="flex justify-center gap-4 mt-4">
               <a
                 href={member.socialLinks.facebook}
