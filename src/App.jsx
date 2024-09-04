@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Team from "./components/Team";
 import Goal from "./components/Goal";
 import Blog from "./components/Blog";
+import Choose from "./components/Choose";
 
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
       </div>
       <div id="projects">
         <Projects />
+      </div>
+      <div id="choose">
+        <Choose />
       </div>
       <div id="blog">
         <Blog />

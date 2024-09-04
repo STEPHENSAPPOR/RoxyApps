@@ -1,73 +1,60 @@
-import { ShieldCheckIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline';
+import { Code, Smartphone, Computer, Cloud } from 'lucide-react';
+
+const services = [
+  {
+    icon: <Code size={40} />,
+    title: 'Web Development',
+    description: 'We create stunning and functional websites tailored to your business needs, ensuring a seamless user experience across all devices.',
+  },
+  {
+    icon: <Smartphone size={40} />,
+    title: 'Mobile App Development',
+    description: 'Our team builds high-performance mobile applications that provide engaging user experiences on both iOS and Android platforms.',
+  },
+  {
+    icon: <Computer size={40} />,
+    title: 'Desktop Software Solutions',
+    description: 'We offer customized desktop software solutions designed to optimize and enhance your business processes.',
+  },
+  {
+    icon: <Cloud size={40} />,
+    title: 'Cloud Integration',
+    description: 'We provide cloud-based solutions to improve the efficiency and scalability of your business operations, with secure and reliable data storage.',
+  },
+];
 
 const Services = () => {
   return (
-    <div className="relative mt-5 px-4 sm:px-6 lg:px-8">
-      {/* Header */}
-      <div className="text-center mb-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4">
-          SERVICES
-        </h2>
-      </div>
-
-      {/* Main Section */}
-      <div className="bg-gradient-to-r from-purple-500 to-orange-400 rounded-lg p-6 sm:p-10 text-white">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
-          {/* Left Section: Text and Button */}
-          <div className="max-w-md mb-8 md:mb-0 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">
-              Our Services For Technology You Need
-            </h3>
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-500">
-              Load More
+    <div className=" text-black py-16 px-8 mt-9">
+      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="lg:w-1/2 mb-12 lg:mb-0 lg:mr-8">
+          <h3 className="text-[#FF9800] uppercase tracking-widest">Our Services</h3>
+          <h2 className="text-4xl font-bold mt-2">What We Do?</h2>
+          <p className="mt-4 text-gray-600">
+            At RoxyApps Limited, we provide innovative digital solutions to streamline and enhance your business processes. From web and mobile development to cloud integration, we’ve got you covered.
+          </p>
+          <div className="mt-12">
+            <button className="px-8 py-4 bg-[#FF9800] text-white rounded-full transition-all duration-300">
+              View All Services
             </button>
           </div>
+        </div>
 
-          {/* Right Section: Services */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {/* Service 1 */}
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-lg flex-shrink-0">
-                <ShieldCheckIcon className="w-8 h-8 text-black" />
+        <div className="lg:w-1/2">
+          <div className="grid grid-cols-2 gap-6">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white text-gray-900 p-4 rounded-lg shadow-md flex items-start">
+                <div className="mr-3 text-blue-400">
+                  <div className="bg-[#FF9800] text-white p-3 rounded-full shadow-md">
+                    {service.icon}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-md font-semibold mb-1">{service.title}</h3>
+                  <p className="text-gray-500 text-xs">{service.description}</p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Cyber Security</h4>
-                
-              </div>
-            </div>
-
-            {/* Service 2 */}
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-lg flex-shrink-0">
-                <ComputerDesktopIcon className="w-8 h-8 text-black" />
-              </div>
-              <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">IT Consultancy</h4>
-                
-              </div>
-            </div>
-
-            {/* Service 3 */}
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-lg flex-shrink-0">
-                <ShieldCheckIcon className="w-8 h-8 text-black" />
-              </div>
-              <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Software Development</h4>
-                
-              </div>
-            </div>
-
-            {/* Service 4 */}
-            <div className="flex items-start space-x-4">
-              <div className="p-3 bg-white rounded-lg flex-shrink-0">
-                <ComputerDesktopIcon className="w-8 h-8 text-black" />
-              </div>
-              <div>
-                <h4 className="text-base sm:text-lg md:text-xl font-semibold">Data Visualization</h4>
-                
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

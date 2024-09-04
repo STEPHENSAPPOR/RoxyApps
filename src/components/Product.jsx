@@ -40,7 +40,7 @@ const Product = () => {
     <div className="relative mt-5">
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold pt-4">
-          PRODUCTS
+          What We Offer
         </h2>
       </div>
       <Slider {...settings} className="relative overflow-hidden">
